@@ -28,7 +28,7 @@ namespace KempingFoglalas
             else { ParcellaAr = 9500*EjszakakSzama; }
             double kedvezmeny = 1;
             if (EjszakakSzama >= 5) { kedvezmeny = 0.9; }
-            return ParcellaAr + ((FelnottFo * 500) * EjszakakSzama + (GyerekFo * 1500) * EjszakakSzama) * kedvezmeny;
+            return (ParcellaAr + (FelnottFo * 500) * EjszakakSzama + (GyerekFo * 1500) * EjszakakSzama) * kedvezmeny;
         }
         public override string ToString()
         {
